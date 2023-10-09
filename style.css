@@ -1,0 +1,159 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: black;
+    color: white;
+}
+header{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    position: sticky;
+    z-index: 100;
+    top:0;
+    background-image: radial-gradient( circle 879px at 8.6% 27.9%,  rgba(191,191,191,0.3) 12.9%, rgba(150,40,27, 0.5) 91.2% );
+
+}
+.bigtitle{
+    font-family: "Sofia", sans-serif;
+    font-size: 50px;
+    text-align: center;
+    color: rgba(128, 0, 0, 0.694);
+    text-shadow: 10px 10px 12px;
+}
+.smalltitle{
+    font-family: "Sofia", sans-serif;
+    font-size: 50px;
+    text-align: center;
+    color: rgba(128, 0, 0, 0.694);
+    text-shadow: 10px 10px 12px; 
+}
+main{
+    padding: 3rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 4rem;
+    border: 5px solid maroon;
+    background-image: radial-gradient(circle 1700px at 8.6% 27.9%,  rgba(160,40,27,0.5) 12.9%, rgba(191,191,191,0.3) 91.2%);
+}
+ul{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(188, 17, 17);
+    visibility: hidden;
+    text-align:center;
+    vertical-align: auto;
+    background-color: #ffffff8b;
+}
+.box:hover ul{
+    visibility: visible;
+}
+.box{
+    margin:50px;
+    box-shadow: 0 2px 4px rgba(127,127,127,0.2);
+}
+.img{
+    width:400px;
+    height: 350px;
+    min-width: auto;
+    min-height:auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+    outline:40px  solid #ffffff8b;
+    outline-offset:5px;
+    border-radius: 1px;
+    position: relative;
+    opacity: 0.9;
+    cursor: pointer;
+    margin: 20px;
+}
+.box:hover::before{
+  
+    font-size: 2rem;
+    background-color: rgba(255, 255, 255, 0.425);
+    border: 1px solid white;
+    border-radius:5px;
+    padding: 5px;
+    position:static;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+  
+}
+.box1{
+    background-image: url(./images/camus.jpg);
+    cursor:pointer;
+    background-size: cover;
+}
+.box1:hover::before{
+    content:"Albert Camus"
+}
+.box2{
+    background-image: url(./images/dosto.jpg);
+    cursor: pointer;
+    background-size: cover;
+}
+.box2:hover::before{
+    content:"Fyodor Dostoevsky"
+}
+.box3{
+    background-image: url(./images/sylvia.jpg);
+    cursor: pointer;
+    background-size: cover;
+}
+.box3:hover::before{
+    content:"Sylvia Plath"
+}
+.box4{
+    background-image: url(./images/poe.jpg);
+    cursor: pointer;
+    background-size: cover;
+}
+.box4:hover::before{
+    content:"Edgar Allan Poe"
+}
+.box5{
+    background-image: url(./images/wilde.jpg);
+    cursor: pointer;
+    background-size: cover;
+}
+.box5:hover::before{
+    content:"Oscar Wilde"
+}
+.box6{
+    background-image: url(./images/murakami.jpg);
+    cursor: pointer;
+    background-size: cover;
+}
+.box6:hover::before{
+    content:"Haruki Murakami"
+}
+footer{
+    color:rgb(160,40,27);
+    text-align: center;
+    font-size: 26px;
+    font-weight: bolder;
+    padding: 30px;
+}
+#pfplink{
+    display: inline;
+    text-align: center;
+    color: black;
+    background-color: rgba(255, 255, 255, 0.425);
+    padding: 7px;
+    border: 3px solid maroon;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 10px;
+    font-weight: bolder;
+}
